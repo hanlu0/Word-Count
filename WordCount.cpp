@@ -8,6 +8,7 @@ int main()
     int character_number =0;//总字符个数
     char c;
     int count=1,i;//初始化容纳字符的数组适当大小
+    printf("请输入英文文本内容：\n");
     while((c = getchar()) != EOF)
     {
     	if((c>='a'&&c<='z')||(c>='A'&&c<='Z'))
@@ -32,9 +33,9 @@ int main()
             ++enter_number;
         }
     }
-    printf("此句单词个数为%d个\n",count);
     character_number=letter_number+space_number+tab_number+enter_number ;
-    printf("字符总数：%d\n",character_number);
+    printf("字符数：%d\n",character_number);
+    printf("单词数：%d\n",count);
     return 0;
 }
 
